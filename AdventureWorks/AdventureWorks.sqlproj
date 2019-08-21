@@ -185,7 +185,6 @@
     <Build Include="Purchasing\Views\vVendorWithContacts.sql" />
     <Build Include="Purchasing\Views\vVendorWithAddresses.sql" />
     <Build Include="Storage\AW2016FullTextCatalog.sql" />
-    <Build Include="FullTextIndexes.sql" />
     <Build Include="dbo\Functions\ufnGetAccountingStartDate.sql" />
     <Build Include="dbo\Functions\ufnGetAccountingEndDate.sql" />
     <Build Include="dbo\Functions\ufnGetProductDealerPrice.sql" />
@@ -226,6 +225,5 @@
     <Build Include="Production\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
     <Build Include="Sales\XMLSchemaCollections\StoreSurveySchemaCollection.sql" />
     <Build Include="Security\Permissions.sql" />
-    <Build Include="ExtendedProperties.sql" />
   </ItemGroup>
 </Project>
