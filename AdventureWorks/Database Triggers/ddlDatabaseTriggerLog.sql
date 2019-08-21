@@ -51,5 +51,5 @@ DISABLE TRIGGER [ddlDatabaseTriggerLog]
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Database trigger to audit all of the DDL changes made to the AdventureWorks 2016 database.', @level0type = N'TRIGGER', @level0name = N'ddlDatabaseTriggerLog';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Database trigger to audit all of the DDL changes made to the AdventureWorks 2016 database.', @level0type = N'TRIGGER', @level0name = N'ddlDatabaseTriggerLog';
 

@@ -5,7 +5,7 @@ CREATE PROCEDURE [HumanResources].[uspUpdateEmployeePersonalInfo]
     @BirthDate [datetime], 
     @MaritalStatus [nchar](1), 
     @Gender [nchar](1)
-WITH EXECUTE AS CALLER
+WITH --EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -19,10 +19,10 @@ BEGIN
         WHERE [BusinessEntityID] = @BusinessEntityID;
     END TRY
     BEGIN CATCH
-        EXECUTE [dbo].[uspLogError];
+        --EXECUTE [dbo].[uspLogError];
     END CATCH;
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Updates the Employee table with the values specified in the input parameters for the given EmployeeID.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'PROCEDURE', @level1name = N'uspUpdateEmployeePersonalInfo';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Updates the Employee table with the values specified in the input parameters for the given EmployeeID.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'PROCEDURE', @level1name = N'uspUpdateEmployeePersonalInfo';
 

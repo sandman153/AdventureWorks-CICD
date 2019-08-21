@@ -224,6 +224,5 @@
     <Build Include="Production\XMLSchemaCollections\ManuInstructionsSchemaCollection.sql" />
     <Build Include="Production\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
     <Build Include="Sales\XMLSchemaCollections\StoreSurveySchemaCollection.sql" />
-    <Build Include="Security\Permissions.sql" />
   </ItemGroup>
 </Project>

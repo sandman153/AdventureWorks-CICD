@@ -62,5 +62,5 @@ FROM [Production].[ProductModel]
 WHERE [CatalogDescription] IS NOT NULL;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the content from each element in the xml column CatalogDescription for each product in the Production.ProductModel table that has catalog data.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'VIEW', @level1name = N'vProductModelCatalogDescription';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the content from each element in the xml column CatalogDescription for each product in the Production.ProductModel table that has catalog data.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'VIEW', @level1name = N'vProductModelCatalogDescription';
 

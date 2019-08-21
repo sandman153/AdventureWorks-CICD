@@ -153,5 +153,5 @@
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the Resume column in the HumanResources.JobCandidate table.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'HRResumeSchemaCollection';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the Resume column in the HumanResources.JobCandidate table.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'HRResumeSchemaCollection';
 

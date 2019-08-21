@@ -42,5 +42,5 @@ FROM [Person].[Person] p
 WHERE c.StoreID IS NULL;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Individual customers (names and addresses) that purchase Adventure Works Cycles products online.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vIndividualCustomer';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Individual customers (names and addresses) that purchase Adventure Works Cycles products online.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vIndividualCustomer';
 

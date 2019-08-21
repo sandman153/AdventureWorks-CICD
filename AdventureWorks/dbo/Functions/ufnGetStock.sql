@@ -18,5 +18,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the quantity of inventory in LocationID 6 (Miscellaneous Storage)for a specified ProductID.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetStock';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the quantity of inventory in LocationID 6 (Miscellaneous Storage)for a specified ProductID.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetStock';
 

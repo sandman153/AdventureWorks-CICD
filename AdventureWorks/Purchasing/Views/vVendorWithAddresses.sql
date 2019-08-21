@@ -23,5 +23,5 @@ FROM [Purchasing].[Vendor] v
     ON at.[AddressTypeID] = bea.[AddressTypeID];
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Vendor (company) names and addresses .', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'VIEW', @level1name = N'vVendorWithAddresses';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Vendor (company) names and addresses .', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'VIEW', @level1name = N'vVendorWithAddresses';
 

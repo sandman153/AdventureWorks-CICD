@@ -1,7 +1,7 @@
 ﻿
 -- uspLogError logs error information in the ErrorLog table about the 
 -- error that caused execution to jump to the CATCH block of a 
--- TRY...CATCH construct. This should be executed from within the scope 
+-- TRY...CATCH construct. This should be --EXECUTEd from within the scope 
 -- of a CATCH block otherwise it will return without inserting error 
 -- information. 
 CREATE PROCEDURE [dbo].[uspLogError] 
@@ -55,11 +55,11 @@ BEGIN
     END TRY
     BEGIN CATCH
         PRINT 'An error occurred in stored procedure uspLogError: ';
-        EXECUTE [dbo].[uspPrintError];
+        --EXECUTE [dbo].[uspPrintError];
         RETURN -1;
     END CATCH
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Logs error information in the ErrorLog table about the error that caused execution to jump to the CATCH block of a TRY...CATCH construct. Should be executed from within the scope of a CATCH block otherwise it will return without inserting error information.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'PROCEDURE', @level1name = N'uspLogError';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Logs error information in the ErrorLog table about the error that caused execution to jump to the CATCH block of a TRY...CATCH construct. Should be --EXECUTEd from within the scope of a CATCH block otherwise it will return without inserting error information.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'PROCEDURE', @level1name = N'uspLogError';
 

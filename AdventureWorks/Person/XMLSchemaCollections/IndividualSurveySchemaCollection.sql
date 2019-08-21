@@ -47,5 +47,5 @@
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the Demographics column in the Person.Person table.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'IndividualSurveySchemaCollection';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the Demographics column in the Person.Person table.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'IndividualSurveySchemaCollection';
 

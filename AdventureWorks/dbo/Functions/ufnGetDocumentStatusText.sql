@@ -18,5 +18,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the text representation of the Status column in the Document table.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetDocumentStatusText';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the text representation of the Status column in the Document table.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetDocumentStatusText';
 

@@ -16,5 +16,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the list price for a given product on a particular order date.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetProductListPrice';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function returning the list price for a given product on a particular order date.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetProductListPrice';
 

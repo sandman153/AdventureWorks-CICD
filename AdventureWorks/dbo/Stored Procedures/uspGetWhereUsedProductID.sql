@@ -35,5 +35,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Stored procedure using a recursive query to return all components or assemblies that directly or indirectly use the specified ProductID.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'PROCEDURE', @level1name = N'uspGetWhereUsedProductID';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Stored procedure using a recursive query to return all components or assemblies that directly or indirectly use the specified ProductID.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'PROCEDURE', @level1name = N'uspGetWhereUsedProductID';
 

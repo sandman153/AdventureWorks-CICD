@@ -28,5 +28,5 @@ FROM [Sales].[Store] s
 	ON pnt.[PhoneNumberTypeID] = pp.[PhoneNumberTypeID];
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Stores (including store contacts) that sell Adventure Works Cycles products to consumers.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vStoreWithContacts';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Stores (including store contacts) that sell Adventure Works Cycles products to consumers.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vStoreWithContacts';
 

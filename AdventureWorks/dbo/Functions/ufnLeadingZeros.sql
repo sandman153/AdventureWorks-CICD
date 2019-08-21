@@ -15,5 +15,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function used by the Sales.Customer table to help set the account number.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnLeadingZeros';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function used by the Sales.Customer table to help set the account number.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnLeadingZeros';
 

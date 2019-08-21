@@ -115,5 +115,5 @@
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the CatalogDescription column in the Production.ProductModel table.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'ProductDescriptionSchemaCollection';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the CatalogDescription column in the Production.ProductModel table.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'ProductDescriptionSchemaCollection';
 

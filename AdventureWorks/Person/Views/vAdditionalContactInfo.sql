@@ -48,5 +48,5 @@ OUTER APPLY [AdditionalContactInfo].nodes(
 WHERE [AdditionalContactInfo] IS NOT NULL;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the contact name and content from each element in the xml column AdditionalContactInfo for that person.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'VIEW', @level1name = N'vAdditionalContactInfo';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the contact name and content from each element in the xml column AdditionalContactInfo for that person.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'VIEW', @level1name = N'vAdditionalContactInfo';
 

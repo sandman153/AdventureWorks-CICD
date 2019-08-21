@@ -33,5 +33,5 @@ CROSS APPLY p.[Demographics].nodes(N'declare default element namespace "http://s
 WHERE [Demographics] IS NOT NULL;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the content from each element in the xml column Demographics for each customer in the Person.Person table.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vPersonDemographics';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Displays the content from each element in the xml column Demographics for each customer in the Person.Person table.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vPersonDemographics';
 

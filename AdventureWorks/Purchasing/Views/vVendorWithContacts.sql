@@ -28,5 +28,5 @@ FROM [Purchasing].[Vendor] v
 	ON pnt.[PhoneNumberTypeID] = pp.[PhoneNumberTypeID];
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Vendor (company) names  and the names of vendor employees to contact.', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'VIEW', @level1name = N'vVendorWithContacts';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Vendor (company) names  and the names of vendor employees to contact.', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'VIEW', @level1name = N'vVendorWithContacts';
 

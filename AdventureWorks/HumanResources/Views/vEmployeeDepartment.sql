@@ -22,5 +22,5 @@ FROM [HumanResources].[Employee] e
 WHERE edh.EndDate IS NULL
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Returns employee name, title, and current department.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'VIEW', @level1name = N'vEmployeeDepartment';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Returns employee name, title, and current department.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'VIEW', @level1name = N'vEmployeeDepartment';
 

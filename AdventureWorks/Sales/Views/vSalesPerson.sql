@@ -47,5 +47,5 @@ FROM [Sales].[SalesPerson] s
 	ON pnt.[PhoneNumberTypeID] = pp.[PhoneNumberTypeID];
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Sales representiatives (names and addresses) and their sales-related information.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vSalesPerson';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Sales representiatives (names and addresses) and their sales-related information.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'VIEW', @level1name = N'vSalesPerson';
 

@@ -36,5 +36,5 @@ CROSS APPLY jc.[Resume].nodes(N'declare default element namespace "http://schema
     /Resume') AS Resume(ref);
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Job candidate names and resumes.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'VIEW', @level1name = N'vJobCandidate';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Job candidate names and resumes.', @level0type = N'SCHEMA', @level0name = N'HumanResources', @level1type = N'VIEW', @level1name = N'vJobCandidate';
 

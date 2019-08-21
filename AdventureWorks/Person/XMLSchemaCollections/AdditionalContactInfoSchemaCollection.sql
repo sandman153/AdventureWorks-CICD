@@ -90,5 +90,5 @@
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the AdditionalContactInfo column in the Person.Contact table.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'AdditionalContactInfoSchemaCollection';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Collection of XML schemas for the AdditionalContactInfo column in the Person.Contact table.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'XML SCHEMA COLLECTION', @level1name = N'AdditionalContactInfoSchemaCollection';
 

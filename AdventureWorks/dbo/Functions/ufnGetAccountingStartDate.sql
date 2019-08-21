@@ -7,5 +7,5 @@ BEGIN
 END;
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function used in the uSalesOrderHeader trigger to set the ending account date.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetAccountingStartDate';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Scalar function used in the uSalesOrderHeader trigger to set the ending account date.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'FUNCTION', @level1name = N'ufnGetAccountingStartDate';
 
