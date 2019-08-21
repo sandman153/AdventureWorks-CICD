@@ -87,10 +87,6 @@
     <Folder Include="Database Triggers\" />
     <Folder Include="dbo\User Defined Types\" />
     <Folder Include="Security\" />
-    <Folder Include="Person\XMLSchemaCollections\" />
-    <Folder Include="HumanResources\XMLSchemaCollections\" />
-    <Folder Include="Production\XMLSchemaCollections\" />
-    <Folder Include="Sales\XMLSchemaCollections\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="HumanResources\Tables\EmployeePayHistory.sql" />
@@ -218,10 +214,5 @@
     <Build Include="Security\Production.sql" />
     <Build Include="Security\Purchasing.sql" />
     <Build Include="Security\Sales.sql" />
-    <Build Include="Person\XMLSchemaCollections\AdditionalContactInfoSchemaCollection.sql" />
-    <Build Include="HumanResources\XMLSchemaCollections\HRResumeSchemaCollection.sql" />
-    <Build Include="Person\XMLSchemaCollections\IndividualSurveySchemaCollection.sql" />
-    <Build Include="Production\XMLSchemaCollections\ManuInstructionsSchemaCollection.sql" />
-    <Build Include="Production\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
   </ItemGroup>
 </Project>
