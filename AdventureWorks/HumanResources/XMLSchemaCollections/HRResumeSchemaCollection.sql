@@ -1,4 +1,4 @@
-﻿CREATE XML SCHEMA COLLECTION [HumanResources].[HRResumeSchemaCollection]
+﻿--CREATE XML SCHEMA COLLECTION [HumanResources].[HRResumeSchemaCollection]
     AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume" elementFormDefault="qualified">
   <xsd:element name="Address" type="t:AddressType" />
   <xsd:element name="Education" type="t:EducationType" />

@@ -1,4 +1,4 @@
-﻿CREATE XML SCHEMA COLLECTION [Person].[IndividualSurveySchemaCollection]
+﻿--CREATE XML SCHEMA COLLECTION [Person].[IndividualSurveySchemaCollection]
     AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey" elementFormDefault="qualified">
   <xsd:element name="IndividualSurvey">
     <xsd:complexType>

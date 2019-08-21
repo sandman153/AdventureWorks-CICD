@@ -1,4 +1,4 @@
-﻿CREATE XML SCHEMA COLLECTION [Sales].[StoreSurveySchemaCollection]
+﻿--CREATE XML SCHEMA COLLECTION [Sales].[StoreSurveySchemaCollection]
     AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey" elementFormDefault="qualified">
   <xsd:element name="StoreSurvey">
     <xsd:complexType>

@@ -1,4 +1,4 @@
-﻿CREATE XML SCHEMA COLLECTION [Person].[AdditionalContactInfoSchemaCollection]
+﻿--CREATE XML SCHEMA COLLECTION [Person].[AdditionalContactInfoSchemaCollection]
     AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo">
   <xsd:element name="AdditionalContactInfo">
     <xsd:complexType mixed="true">

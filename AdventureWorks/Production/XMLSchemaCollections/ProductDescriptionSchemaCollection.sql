@@ -1,4 +1,4 @@
-﻿CREATE XML SCHEMA COLLECTION [Production].[ProductDescriptionSchemaCollection]
+﻿--CREATE XML SCHEMA COLLECTION [Production].[ProductDescriptionSchemaCollection]
     AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ProductModelWarrAndMain" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ProductModelWarrAndMain" elementFormDefault="qualified">
   <xsd:element name="Maintenance">
     <xsd:complexType>
