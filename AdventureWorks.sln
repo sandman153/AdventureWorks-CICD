@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureWorks", "AdventureWorks\AdventureWorks.sqlproj", "{506A50B1-E288-493C-AF63-F16ED28228E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506A50B1-E288-493C-AF63-F16ED28228E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF2B25C2-0744-4A16-81D7-1B782DD25B90}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/DataSolWiz
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AdventureWorks\\AdventureWorks.sqlproj
+		SccProjectName1 = AdventureWorks
+		SccLocalPath1 = AdventureWorks
+	EndGlobalSection
+EndGlobal
