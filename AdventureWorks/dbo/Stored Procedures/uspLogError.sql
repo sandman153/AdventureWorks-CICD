@@ -55,7 +55,7 @@ BEGIN
     END TRY
     BEGIN CATCH
         PRINT 'An error occurred in stored procedure uspLogError: ';
-        --EXECUTE [dbo].[uspPrintError];
+        EXECUTE [dbo].[uspPrintError];
         RETURN -1;
     END CATCH
 END;

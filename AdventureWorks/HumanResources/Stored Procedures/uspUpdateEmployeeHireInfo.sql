@@ -38,6 +38,6 @@ BEGIN
             ROLLBACK TRANSACTION;
         END
 
-        --EXECUTE [dbo].[uspLogError];
+        EXECUTE [dbo].[uspLogError];
     END CATCH;
 END;

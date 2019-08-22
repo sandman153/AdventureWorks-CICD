@@ -19,7 +19,7 @@ BEGIN
         WHERE [BusinessEntityID] = @BusinessEntityID;
     END TRY
     BEGIN CATCH
-        --EXECUTE [dbo].[uspLogError];
+        EXECUTE [dbo].[uspLogError];
     END CATCH;
 END;
 
