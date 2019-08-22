@@ -7,7 +7,7 @@ CREATE PROCEDURE [HumanResources].[uspUpdateEmployeeHireInfo]
     @Rate [money], 
     @PayFrequency [tinyint], 
     @CurrentFlag [dbo].[Flag] 
-WITH --EXECUTE AS CALLER
+WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;

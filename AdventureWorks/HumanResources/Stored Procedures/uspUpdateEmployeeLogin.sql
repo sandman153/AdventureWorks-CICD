@@ -6,7 +6,7 @@ CREATE PROCEDURE [HumanResources].[uspUpdateEmployeeLogin]
     @JobTitle [nvarchar](50),
     @HireDate [datetime],
     @CurrentFlag [dbo].[Flag]
-WITH --EXECUTE AS CALLER
+WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;

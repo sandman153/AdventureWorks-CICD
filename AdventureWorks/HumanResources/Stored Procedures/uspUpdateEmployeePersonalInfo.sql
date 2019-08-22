@@ -5,7 +5,7 @@ CREATE PROCEDURE [HumanResources].[uspUpdateEmployeePersonalInfo]
     @BirthDate [datetime], 
     @MaritalStatus [nchar](1), 
     @Gender [nchar](1)
-WITH --EXECUTE AS CALLER
+WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;
