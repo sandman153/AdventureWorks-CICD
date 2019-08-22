@@ -8,7 +8,7 @@ CREATE PROCEDURE [dbo].[uspSearchCandidateResumes]
     @language[int]=0
 
 
-WITH --EXECUTE AS CALLER
+WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;
