@@ -54,7 +54,7 @@ CREATE UNIQUE NONCLUSTERED INDEX [AK_Employee_rowguid]
 GO
 
 CREATE TRIGGER [HumanResources].[dEmployee] ON [HumanResources].[Employee] 
-INSTEAD OF DELETE NOT FOR REPLICATION AS 
+INSTEAD OF DELETE  AS 
 BEGIN
     DECLARE @Count int;
 

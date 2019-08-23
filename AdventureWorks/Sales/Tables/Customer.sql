@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Sales].[Customer] (
-    [CustomerID]    INT              IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [CustomerID]    INT              IDENTITY (1, 1)  NOT NULL,
     [PersonID]      INT              NULL,
     [StoreID]       INT              NULL,
     [TerritoryID]   INT              NULL,

@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Sales].[SalesOrderHeader] (
-    [SalesOrderID]           INT                   IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [SalesOrderID]           INT                   IDENTITY (1, 1)  NOT NULL,
     [RevisionNumber]         TINYINT               CONSTRAINT [DF_SalesOrderHeader_RevisionNumber] DEFAULT ((0)) NOT NULL,
     [OrderDate]              DATETIME              CONSTRAINT [DF_SalesOrderHeader_OrderDate] DEFAULT (getdate()) NOT NULL,
     [DueDate]                DATETIME              NOT NULL,
@@ -66,7 +66,7 @@ CREATE NONCLUSTERED INDEX [IX_SalesOrderHeader_SalesPersonID]
 GO
 
 CREATE TRIGGER [Sales].[uSalesOrderHeader] ON [Sales].[SalesOrderHeader] 
-AFTER UPDATE NOT FOR REPLICATION AS 
+AFTER UPDATE  AS 
 BEGIN
     DECLARE @Count int;
 
