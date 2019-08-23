@@ -4,7 +4,7 @@
     [TaxType]         TINYINT          NOT NULL,
     [TaxRate]         SMALLMONEY       CONSTRAINT [DF_SalesTaxRate_TaxRate] DEFAULT ((0.00)) NOT NULL,
     [Name]            [dbo].[Name]     NOT NULL,
-    [rowguid]         UNIQUEIDENTIFIER CONSTRAINT [DF_SalesTaxRate_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,
+    [rowguid]         UNIQUEIDENTIFIER CONSTRAINT [DF_SalesTaxRate_rowguid] DEFAULT (newid())  NOT NULL,
     [ModifiedDate]    DATETIME         CONSTRAINT [DF_SalesTaxRate_ModifiedDate] DEFAULT (getdate()) NOT NULL,
     CONSTRAINT [PK_SalesTaxRate_SalesTaxRateID] PRIMARY KEY CLUSTERED ([SalesTaxRateID] ASC),
     CONSTRAINT [CK_SalesTaxRate_TaxType] CHECK ([TaxType]>=(1) AND [TaxType]<=(3)),
@@ -79,7 +79,7 @@ GO
 
 
 GO
---EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'TABLE', @level1name = N'SalesTaxRate', @level2type = N'COLUMN', @level2name = N'rowguid';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N' number uniquely identifying the record. Used to support a merge replication sample.', @level0type = N'SCHEMA', @level0name = N'Sales', @level1type = N'TABLE', @level1name = N'SalesTaxRate', @level2type = N'COLUMN', @level2name = N'rowguid';
 
 
 GO

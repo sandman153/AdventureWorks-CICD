@@ -11,7 +11,7 @@
     [Status]          TINYINT             NOT NULL,
     [DocumentSummary] NVARCHAR (MAX)      NULL,
     [Document]        VARBINARY (MAX)     NULL,
-    [rowguid]         UNIQUEIDENTIFIER    CONSTRAINT [DF_Document_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,
+    [rowguid]         UNIQUEIDENTIFIER    CONSTRAINT [DF_Document_rowguid] DEFAULT (newid())  NOT NULL,
     [ModifiedDate]    DATETIME            CONSTRAINT [DF_Document_ModifiedDate] DEFAULT (getdate()) NOT NULL,
     CONSTRAINT [PK_Document_DocumentNode] PRIMARY KEY CLUSTERED ([DocumentNode] ASC),
     CONSTRAINT [CK_Document_Status] CHECK ([Status]>=(1) AND [Status]<=(3)),
@@ -116,7 +116,7 @@ GO
 
 
 GO
---EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'ROWGUIDCOL number uniquely identifying the record. Required for FileStream.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'TABLE', @level1name = N'Document', @level2type = N'COLUMN', @level2name = N'rowguid';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N' number uniquely identifying the record. Required for FileStream.', @level0type = N'SCHEMA', @level0name = N'Production', @level1type = N'TABLE', @level1name = N'Document', @level2type = N'COLUMN', @level2name = N'rowguid';
 
 
 GO

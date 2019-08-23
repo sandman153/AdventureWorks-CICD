@@ -10,7 +10,7 @@
     [EmailPromotion]        INT                                                           CONSTRAINT [DF_Person_EmailPromotion] DEFAULT ((0)) NOT NULL,
     [AdditionalContactInfo] XML(CONTENT [Person].[AdditionalContactInfoSchemaCollection]) NULL,
     [Demographics]          XML(CONTENT [Person].[IndividualSurveySchemaCollection])      NULL,
-    [rowguid]               UNIQUEIDENTIFIER                                              CONSTRAINT [DF_Person_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,
+    [rowguid]               UNIQUEIDENTIFIER                                              CONSTRAINT [DF_Person_rowguid] DEFAULT (newid())  NOT NULL,
     [ModifiedDate]          DATETIME                                                      CONSTRAINT [DF_Person_ModifiedDate] DEFAULT (getdate()) NOT NULL,
     CONSTRAINT [PK_Person_BusinessEntityID] PRIMARY KEY CLUSTERED ([BusinessEntityID] ASC),
     CONSTRAINT [CK_Person_EmailPromotion] CHECK ([EmailPromotion]>=(0) AND [EmailPromotion]<=(2)),
@@ -204,7 +204,7 @@ GO
 
 
 GO
---EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'TABLE', @level1name = N'Person', @level2type = N'COLUMN', @level2name = N'rowguid';
+--EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N' number uniquely identifying the record. Used to support a merge replication sample.', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'TABLE', @level1name = N'Person', @level2type = N'COLUMN', @level2name = N'rowguid';
 
 
 GO
